@@ -77,16 +77,21 @@ public class BasicActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.manifest) {
+            Intent i = new Intent(BasicActivity.this, ManifestActivity.class);
+            startActivity(i);
             // Handle the camera action
         } else if (id == R.id.introduction) {
             Intent i = new Intent(BasicActivity.this, IntroductionActivity.class);
             startActivity(i);
         } else if (id == R.id.fundamentals) {
-
+            Intent i = new Intent(BasicActivity.this, FundamentalActivity.class);
+            startActivity(i);
         } else if (id == R.id.resources) {
-
+            Intent i = new Intent(BasicActivity.this, ResourceActivity.class);
+            startActivity(i);
         } else if (id == R.id.permission) {
-
+            Intent i = new Intent(BasicActivity.this, PermissionsActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

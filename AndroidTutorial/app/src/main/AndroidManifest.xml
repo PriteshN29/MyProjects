@@ -26,6 +26,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TestActivity" />
         <activity android:name=".AboutUsActivity" />
+        <activity android:name=".FundamentalActivity"/>
+        <activity android:name=".ResourceActivity"/>
+        <activity android:name=".ManifestActivity"/>
+        <activity android:name=".PermissionsActivity"/>
         <activity android:name=".Introduction.IntroductionActivity"></activity>
     </application>
 

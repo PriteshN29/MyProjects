@@ -12,7 +12,7 @@
     <string name="to_install_android_studio">
         To install Android Studio on Windows, proceed as follows:
         \n\n
-        1. Download it from https://developer.android.com/studio/index.html \n
+        1. Download it from this https://developer.android.com/studio/index.html \n
         2.Launch the .exe file you downloaded \n
         3.Follow the setup wizard to install Android Studio and any necessary SDK tools.
         \n\n</string>
@@ -26,5 +26,50 @@
     <string name="run_on_an_emulator">Run on an emulator</string>
     <string name="run_the_app_on_an_emulator_the_emulator"><![CDATA[Run the app on an emulator as follows: \n 1.In Android Studio, click the app module in the Project window and then select Run > Run (or click Run in the toolbar). \n 2.In the Select Deployment Target window, click Create New Virtual Device. \n 3.In the Select Hardware screen, select a phone device, such as Pixel, and then click Next. \n 4.In the System Image screen, select the version with the highest API level. \n If you don\'t have that version installed, a Download link is shown, so click that and complete the download. \n 5.Click Next. \n 6.On the Android Virtual Device (AVD) screen, leave all the settings alone and click Finish. \n 7.Back in the Select Deployment Target dialog, select the device you just created and click OK. \n Android Studio installs the app on the emulator and starts it. You should now see \"Hello World!\" displayed in the app running on the emulator.]]> \n </string>
     <string name="congratulations_on_making_your_first_app">\n \n Congratulations on making your first App!!</string>
+    <string name="fundamental1">
+        Android apps can be written using Kotlin, Java, and C++ languages. The Android SDK tools compile your code along with any data and resource files into an APK, an Android package, which is an archive file with an .apk suffix. \n One APK file contains all the contents of an Android app and is the file that Android-powered devices use to install the app.
+        \n Each Android app lives in its own security sandbox, protected by the following Android security features
+       \n 1. The Android operating system is a multi-user Linux system in which each app is a different user.
+\n 2. By default, the system assigns each app a unique Linux user ID (the ID is used only by the system and is unknown to the app). The system sets permissions for all the files in an app so that only the user ID assigned to that app can access them.
+\n 3. Each process has its own virtual machine (VM), so an app's code runs in isolation from other apps.
+\n 4. By default, every app runs in its own Linux process. The Android system starts the process when any of the app's components need to be executed, and then shuts down the process when it's no longer needed or when the system must recover memory for other apps.
+    </string>
+
+    <string name="fundamental2"> App components</string>
+    <string name="fundamental3"> App components are the essential building blocks of an Android app. Each component is an entry point through which the system or a user can enter your app. Some components depend on others.
+    \n There are four different types of app components:
+     \n  1. Activities. \n 2. Services. \n 3. Broadcast receivers. \n 4.Content providers.</string>
+    <string name="resource1"> App Resources</string>
+    <string name="resource2"> \n Resources are the additional files and static content that your code uses, such as bitmaps, layout definitions, user interface strings, animation instructions, and more.
+    \n You should always maintain these resources independent from your source code and provide alternative resources to support specific device configurations. \n For example, you can create a layout file that is applied to your UI by default, but also include variations of that layout that is applied to specific screen sizes or screen orientations.</string>
+    <string name="resource3"> Providing Resources</string>
+    <string name="resource4"> \n You should always externalize app resources such as images and strings from your code, so that you can maintain them independently.
+    \n You should also provide alternative resources for specific device configurations, by grouping them in specially-named resource directories. At runtime, Android uses the appropriate resource based on the current configuration.
+    \n For example, you might want to provide a different UI layout depending on the screen size or different strings depending on the language setting.
+    \n Once you externalize your app resources, you can access them using resource IDs that are generated in your project's R class. How to use resources in your app is discussed in Accessing Resources. This document shows you how to group your resources in your Android project and provide alternative resources for specific device configurations.
+    </string>
+    <string name="man1">App Manifest Overview</string>
+    <string name="man2">Every app project must have an AndroidManifest.xml file (with precisely that name) at the root of the project source set. The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.
+    \n Among many other things, the manifest file is required to declare the following: \n
+     1.The app package name, which usually matches your code namespace.The Android build tools use this to determine the location of code entities when building your project. When packaging the app, the build tools replace this value with the application ID from the Gradle build files, which is used as the unique app identifier on the system and on Google Play.
+    \n 2. The components of the app, which include all activities, services, broadcast receivers, and content providers. Each component must define basic properties such as the name of its Kotlin or Java class. It can also declare capabilities such as which device configurations it can handle, and intent filters that describe how the component can be started.
+    \n </string>
+    <string name="man3">App components</string>
+    <string name="man4">For each app component that you create in your app, you must declare a corresponding XML element in the manifest file:
+
+\n 1.activity for each subclass of Activity.
+\n 2.service for each subclass of Service.
+\n 3.receiver for each subclass of BroadcastReceiver.
+\n 4. provider for each subclass of ContentProvider.
+\n If you subclass any of these components without declaring it in the manifest file, the system cannot start it.</string>
+    <string name="per1">App Permissions</string>
+    <string name="per2">To maintain security for the system and users, Android requires that apps declare the permissions they need before they can use certain system data and features. Depending on how sensitive the area is, the system may grant the permission automatically, or it may ask the user to approve the request.
+    \n The purpose of a permission is to protect the privacy of an Android user. Android apps must request permission to access sensitive user data (such as contacts and SMS), as well as certain system features (such as camera and internet). Depending on the feature, the system might grant the permission automatically or might prompt the user to approve the request.
+    </string>
+
+    <string name="per3">Permission approval</string>
+    <string name="per4">An app must publicize the permissions it requires by including uses-permission tags in the app manifest. \n For example, an app that needs to send SMS messages would have this line in the manifest:
+    \n If your app lists normal permissions in its manifest (that is, permissions that don't pose much risk to the user's privacy or the device's operation), the system automatically grants those permissions to your app.
+    \n If your app lists dangerous permissions in its manifest (that is, permissions that could potentially affect the user's privacy or the device's normal operation), such as the SEND_SMS permission above, the user must explicitly agree to grant those permissions.</string>
 
 </resources>
