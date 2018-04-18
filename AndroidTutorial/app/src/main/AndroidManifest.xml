@@ -30,6 +30,10 @@
         <activity android:name=".ResourceActivity"/>
         <activity android:name=".ManifestActivity"/>
         <activity android:name=".PermissionsActivity"/>
+        <activity android:name=".FirebaseActivity"/>
+        <activity android:name=".MaterialActivity"/>
+        <activity android:name=".BeginnerActivity"/>
+        <activity android:name=".CloudActivity"/>
         <activity android:name=".Introduction.IntroductionActivity"></activity>
     </application>
 

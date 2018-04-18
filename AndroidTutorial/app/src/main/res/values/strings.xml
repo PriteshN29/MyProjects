@@ -71,5 +71,43 @@
     <string name="per4">An app must publicize the permissions it requires by including uses-permission tags in the app manifest. \n For example, an app that needs to send SMS messages would have this line in the manifest:
     \n If your app lists normal permissions in its manifest (that is, permissions that don't pose much risk to the user's privacy or the device's operation), the system automatically grants those permissions to your app.
     \n If your app lists dangerous permissions in its manifest (that is, permissions that could potentially affect the user's privacy or the device's normal operation), such as the SEND_SMS permission above, the user must explicitly agree to grant those permissions.</string>
+    <string name="fire1">Connect to Firebase</string>
+    <string name="fire2">Firebase is a mobile platform that helps you quickly develop high-quality apps, grow your user base, and earn more money.\n Firebase is made up of complementary features that you can mix-and-match to fit your needs, with Google Analytics for Firebase at the core.
+    \n Link: \n https://www.youtube.com/watch?v=O17OWyx08Cg</string>
+
+    <string name="fire3">Android working with Firebase Realtime Database (Demo)
+    </string>
+    <string name="fire4">https://www.youtube.com/watch?v=Ae3kqqJoN_0   \n
+    https://www.androidhive.info/2016/10/android-working-with-firebase-realtime-database/</string>
+    <string name="fire5">Android Getting Started with Firebase – Login and Registration Authentication</string>
+    <string name="fire6">https://www.androidhive.info/2016/06/android-getting-started-firebase-simple-login-registration-auth/</string>
+    <string name="mat1">Android Content Placeholder Animation like Facebook using Shimmer</string>
+    <string name="mat2">https://www.androidhive.info/2018/01/android-content-placeholder-animation-like-facebook-using-shimmer/</string>
+    <string name="mat3">Android App UI Designing using Sketch and Zeplin</string>
+    <string name="mat4">https://www.androidhive.info/2018/01/android-app-ui-designing-using-sketch-app-and-zeplin/</string>
+    <string name="mat5">Android Building Image Filters like Instagram</string>
+    <string name="mat6">https://www.androidhive.info/2017/11/android-building-image-filters-like-instagram/</string>
+    <string name="mat7">Android adding RecyclerView Swipe to Delete and Undo</string>
+    <string name="mat8">https://www.androidhive.info/2017/09/android-recyclerview-swipe-delete-undo-using-itemtouchhelper/</string>
+    <string name="beg1">Android Easy Runtime Permissions with Dexter</string>
+    <string name="beg2">https://www.androidhive.info/2017/12/android-easy-runtime-permissions-with-dexter/</string>
+    <string name="beg3">Android Working with ButterKnife ViewBinding Library</string>
+    <string name="beg4">https://www.androidhive.info/2017/10/android-working-with-butterknife-viewbinding-library/</string>
+    <string name="beg5">Android Working with WebView – Building a Simple In-App Browser</string>
+    <string name="beg6">https://www.androidhive.info/2016/12/android-working-with-webview-building-a-simple-in-app-browser/</string>
+    <string name="beg7">Android Floating Widget like Facebook Chat Head</string>
+    <string name="beg8">https://www.androidhive.info/2016/11/android-floating-widget-like-facebook-chat-head/</string>
+
+    <string name="cl1">Android Integrating Google’s reCAPTCHA in your App</string>
+    <string name="cl2">https://www.androidhive.info/2018/04/android-recaptcha-safetynet/</string>
+    <string name="cl3">Android Barcode / QR Code Scanner using Google Mobile Vision – Building Movie Tickets App</string>
+    <string name="cl4">https://www.androidhive.info/2017/08/android-barcode-scanner-using-google-mobile-vision-building-movie-tickets-app/</string>
+    <string name="cl5">Android Push Notifications using Firebase Cloud Messaging FCM and PHP</string>
+    <string name="cl6">https://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/</string>
+    <string name="cl7">Android Working with Retrofit HTTP Library</string>
+    <string name="cl8">https://www.androidhive.info/2016/05/android-working-with-retrofit-http-library/</string>
+
+
+
 
 </resources>

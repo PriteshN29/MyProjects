@@ -73,15 +73,18 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.activities) {
-            Intent i = new Intent(this,AboutUsActivity.class);
+        if (id == R.id.firebase) {
+            Intent i = new Intent(this, FirebaseActivity.class);
             startActivity(i);
-        } else if (id == R.id.intents) {
-
-        } else if (id == R.id.ui) {
-
-        } else if (id == R.id.maps) {
-
+        } else if (id == R.id.material) {
+            Intent i = new Intent(this, MaterialActivity.class);
+            startActivity(i);
+        } else if (id == R.id.beginner) {
+            Intent i = new Intent(this, BeginnerActivity.class);
+            startActivity(i);
+        } else if (id == R.id.cloud) {
+            Intent i = new Intent(this, CloudActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

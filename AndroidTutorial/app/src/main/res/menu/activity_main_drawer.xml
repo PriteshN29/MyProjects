@@ -5,17 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/activities"
-            android:title="Activities" />
+            android:id="@+id/firebase"
+            android:title="Firebase" />
         <item
-            android:id="@+id/intents"
-            android:title="Intents" />
+            android:id="@+id/material"
+            android:title="Material Design" />
         <item
-            android:id="@+id/ui"
-            android:title="User Interface" />
+            android:id="@+id/cloud"
+            android:title="Cloud Connectivity" />
         <item
-            android:id="@+id/maps"
-            android:title="Google Maps" />
+            android:id="@+id/beginner"
+            android:title="Beginner" />
     </group>
 
 </menu>
